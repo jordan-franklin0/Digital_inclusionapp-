@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt-br" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Nova Categoria</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npn/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+</head>
+<body>
+    <div th:replace="~{fragments/navbar  ::  navbar}"></div>
+    <div class="container mt-4">
+        <h1>Cadastrar Nova Categoria</h1>
+
+        <form th:action="@{/categorias/salvar}" method="post">
+            <div class="nb-3">
+                <label for="name" class="form-label">Nome da Categorias</label>
+                <input type="text"> class
+            </div>
+
+
+        </form>
+
+
+    </div>
+
+</body>
+</html>

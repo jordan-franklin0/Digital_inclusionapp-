@@ -13,4 +13,9 @@ public class CategoryController {
     public String index(Model model) {
         return "categorias/index";
     }
+
+    @GetMapping("/cadastrar")
+    public String createCategory() {
+        return "categorias/cadastrar";
+    }
 }
